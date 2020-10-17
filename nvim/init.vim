@@ -1,4 +1,10 @@
 " Specify a directory for plugins
+let plugins = '~/.config/nvim'
+
+if has('win32')
+  plugins = 'some other location'
+endif
+
 call plug#begin('~/.config/nvim')
 
 Plug 'preservim/nerdtree'
