@@ -15,6 +15,8 @@ abbr migrate 'php yii migrate'
 abbr rcache 'sudo sudo chown -R izanovic:izanovic /home/izanovic/projects/web-api/var/cache'
 abbr hjs './bin/update-heimdall-js.sh http://web-api.julian.local.office.bouw7.nl/api/spec.json'
 abbr cover 'http://web-api.julian.local.office.bouw7.nl/phpunit/index.html'
+abbr fonq 'cd /mnt/c/_repositories/Fonq/Fonq.Presentation.Frontend'
+abbr rfonq 'cd /mnt/c/_repositories/Fonq/Fonq.Presentation.Frontend && cmd.exe /c gulp watch && npm run watch:fonq && npm run build --colors=always && dotnet msbuild ../Fonq.sln'
 # Git 
 abbr g 'git'
 abbr ga 'git add'
