@@ -5,6 +5,7 @@ SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_api:cd\x20\x7e/projects/web\x2dapi
 SETUVAR _fish_abbr_b:prevd
 SETUVAR _fish_abbr_b7:cd\x20\x7e/projects/bouw7
+SETUVAR _fish_abbr_c:cd\x20\x7e/\x2econfig/
 SETUVAR _fish_abbr_cover:http\x3a//web\x2dapi\x2ejulian\x2elocal\x2eoffice\x2ebouw7\x2enl/phpunit/index\x2ehtml
 SETUVAR _fish_abbr_fonq:cd\x20/mnt/c/_repositories/Fonq/Fonq\x2ePresentation\x2eFrontend
 SETUVAR _fish_abbr_g:git
@@ -40,7 +41,8 @@ SETUVAR _fish_abbr_hjs:\x2e/bin/update\x2dheimdall\x2djs\x2esh\x20http\x3a//web\
 SETUVAR _fish_abbr_m:master
 SETUVAR _fish_abbr_migrate:php\x20yii\x20migrate
 SETUVAR _fish_abbr_o:composer
-SETUVAR _fish_abbr_p:cd\x20\x7e/projects/\x20\x26\x26\x20cd
+SETUVAR _fish_abbr_p:cd\x20\x7e/projects/\x20\x26\x26
+SETUVAR _fish_abbr_pf:cd\x20\x7e/projects/\x20\x26\x26\x20cd\x20FonqResponsive/Fonq\x2ePresentation\x2eFrontend/
 SETUVAR _fish_abbr_pn:cd\x20\x7e/projects/\x7b0\x7d/\x7b0\x7d\x2eUI\x2eFrontend
 SETUVAR _fish_abbr_rcache:sudo\x20sudo\x20chown\x20\x2dR\x20izanovic\x3aizanovic\x20/home/izanovic/projects/web\x2dapi/var/cache
 SETUVAR _fish_abbr_rfonq:cd\x20/mnt/c/_repositories/Fonq/Fonq\x2ePresentation\x2eFrontend\x20\x26\x26\x20cmd\x2eexe\x20/c\x20gulp\x20watch\x20\x26\x26\x20npm\x20run\x20watch\x3afonq\x20\x26\x26\x20npm\x20run\x20build\x20\x2d\x2dcolors\x3dalways\x20\x26\x26\x20dotnet\x20msbuild\x20\x2e\x2e/Fonq\x2esln

@@ -8,7 +8,9 @@ fish_vi_key_bindings
 abbr b 'prevd'
 # Projects 
 abbr o 'composer'
-abbr p 'cd ~/projects/ && cd'
+abbr p 'cd ~/projects/ &&'
+abbr c 'cd ~/.config/'
+abbr pf 'cd ~/projects/ && cd FonqResponsive/Fonq.Presentation.Frontend/'
 abbr b7 'cd ~/projects/bouw7' 
 abbr api 'cd ~/projects/web-api'
 abbr migrate 'php yii migrate'

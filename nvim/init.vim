@@ -6,7 +6,7 @@ if has('win32')
 endif
 
 
-call plug#begin('~/.config/nvim')
+call plug#begin(plugins)
 
 Plug 'preservim/nerdtree'
 "Plug 'tsony-tsonev/nerdtree-git-plugin'

@@ -3,7 +3,6 @@
 #
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
-#
 
 # i3 config file (v4)
 #
@@ -345,7 +344,7 @@ bindsym XF86AudioPrev exec playerctl previous
 new_window pixel 1
 
 # Set background
-exec_always --no-start9up-id feh --bg-scale /home/izanovic/Pictures/wallpaper.jpg
+exec_always --no-startup-id feh --bg-scale /home/izanovic/Pictures/wallpaper.jpg
 
 #startup
 
