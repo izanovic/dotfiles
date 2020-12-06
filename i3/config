@@ -138,15 +138,15 @@ set $ws10 "10"
 # set $ews10 "n10."
 
 # Multi monitor setup
-set $MON2 ePD-1 # Lenovo Laptop
-set $MON1 HDMI-1 # 32" Monitor AOC
+set $MON2 ePD-1-1 # Lenovo Laptop
+set $MON1 HDMI-1-1 # 32" Monitor AOC
 set $MON3 DP-1
 
 #Set multimonitor setup
 #bindsym $mod+$mod2+m exec --no-startup-id xrandr --output HDMI-1 --size 1920x1080 --pos 0x0 --rotate left --output DP-1 --size 1920x1080 --pos 1080x0 --rotate right --output eDP-1 --size 1920x1080 --pos 2160x800 --rotate normal --primary
 
 bindsym $mod+$mod2+m exec --no-startup-id xrandr --output HDMI-1 --size 2560x1440 --pos 0x0 --rotate normal --output eDP-1 --size 1920x1080 --pos 2560x1000 --rotate normal --primary
-bindsym $mod+$mod2+n exec --no-startup-id xrandr --output eDP-1 --size 1920x1080 --pos 0x0 --rotate normal --primary --output HDMI-1 --size 2560x1440 --pos 1920x0 --rotate normal 
+bindsym $mod+$mod2+n exec --no-startup-id xrandr --output eDP-1-1 --size 1920x1080 --pos 0x0 --rotate normal --primary --output HDMI-1-1 --size 2560x1440 --pos 1920x0 --rotate normal 
 
 # output of workpace
 workspace $wsm1 output $MON2
@@ -235,10 +235,13 @@ bindsym $mod+Shift+grave move container to workspace $wsm1
 
 # programs
 bindsym $mod+$mod2+b exec --no-startup-id google-chrome --start-fullscreen
-bindsym $mod+b exec --no-startup-id i3-msg 'exec firefox --kiosk'
+bindsym $mod+b exec --no-startup-id i3-msg 'exec firefox --start-fullscreen'
 bindsym $mod+$mod2+f	exec --no-startup-id nautilus
+bindsym $mod+o	exec "sh -c 'cd ~/oni2 && esy run'"
 
-for_window [class="Firefox"] exec "sh -c 'sleep 0.22; i3-msg fullscreen disable'"
+# Startup programming programs
+bindsym $mod+p exec --no-startup-id i3-msg wokspace $ws4; exec firefox; split horizontal; exec "sh -c 'cd ~/oni2 && esy run'"; split vertical; exec alacritty; split horizontal; exec alacritty 
+# -c 'cd ~/projects/LTO/LTO.UI.SeasonalWork' 
 
 # take a screenshot
 bindsym Print exec maim -s --format=png /dev/stdout | xclip -selection clipboard -t image/png -i
@@ -293,22 +296,22 @@ bar {
 
 # Easier Rezising
 
-# These bindings trigger as soon as you enter the resize mode
+set $resize 3
 
 # Pressing left will shrink the window’s width.
 # Pressing right will grow the window’s width.
 # Pressing up will shrink the window’s height.
 # Pressing down will grow the window’s height.
-bindsym $mod+$mod2+$left resize shrink width 10 px or 10 ppt
-bindsym $mod+$mod2+$up resize grow height 10 px or 10 ppt
-bindsym $mod+$mod2+$down resize shrink height 10 px or 10 ppt
-bindsym $mod+$mod2+$right resize grow width 10 px or 10 ppt
+bindsym $mod+$mod2+$left resize shrink width $resize px or $resize ppt
+bindsym $mod+$mod2+$up resize grow height $resize px or $resize ppt
+bindsym $mod+$mod2+$down resize shrink height $resize px or $resize ppt
+bindsym $mod+$mod2+$right resize grow width $resize px or $resize ppt
 
 # same bindings, but for the arrow keys
-bindsym $mod+$mod2+Left resize shrink width 10 px or 10 ppt
-bindsym $mod+$mod2+Down resize grow height 10 px or 10 ppt
-bindsym $mod+$mod2+Up resize shrink height 10 px or 10 ppt
-bindsym $mod+$mod2+Right resize grow width 10 px or 10 ppt
+bindsym $mod+$mod2+Left resize shrink width $resize px or $resize ppt
+bindsym $mod+$mod2+Down resize grow height $resize px or $resize ppt
+bindsym $mod+$mod2+Up resize shrink height $resize px or $resize ppt
+bindsym $mod+$mod2+Right resize grow width $resize px or $resize ppt
 
 # lockscreen
 #bindsym $mod+x exec
@@ -319,7 +322,11 @@ for_window [window_role="pop-up"]                     floating enable,move absol
 for_window [window_role="task_dialog"]                floating enable,move absolute center
 for_window [title="Preferences$"]                     floating enable,move absolute center
 for_window [class="Dia" window_role="toolbox_window"] floating enable,move absolute right,resize grow up 50 px or 50 ppt
-for_window [title="Microsoft Teams Notification"] floating enable
+for_window [title="Microsoft Teams Notification"]     floating enable,move absolute right,resize grow up 50 px or 50 ppt
+
+
+
+for_window [title="Microsoft Teams Notification"]     move workspace 
 
 # change volume or toggle mute
 bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+10 i3blocks 
