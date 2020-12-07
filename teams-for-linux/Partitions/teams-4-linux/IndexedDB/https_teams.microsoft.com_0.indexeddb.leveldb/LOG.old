@@ -1,0 +1,37 @@
+2020/12/06-17:12:14.336 2056 Reusing MANIFEST /home/jf/.config/teams-for-linux/Partitions/teams-4-linux/IndexedDB/https_teams.microsoft.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/12/06-17:12:23.194 2249 Level-0 table #5: started
+2020/12/06-17:12:23.211 2249 Level-0 table #5: 1308061 bytes OK
+2020/12/06-17:12:23.215 2249 Delete type=0 #3
+2020/12/06-17:12:25.767 2249 Level-0 table #7: started
+2020/12/06-17:12:25.781 2249 Level-0 table #7: 1271014 bytes OK
+2020/12/06-17:12:25.784 2249 Delete type=0 #4
+2020/12/06-17:12:26.082 2249 Compacting 1@1 + 1@2 files
+2020/12/06-17:12:26.132 2249 Generated table #8@1: 10626 keys, 2152198 bytes
+2020/12/06-17:12:26.140 2249 Generated table #9@1: 1196 keys, 290926 bytes
+2020/12/06-17:12:26.140 2249 Compacted 1@1 + 1@2 files => 2443124 bytes
+2020/12/06-17:12:26.143 2249 compacted to: files[ 0 0 2 0 0 0 0 ]
+2020/12/06-17:12:26.143 2249 Delete type=2 #7
+2020/12/06-17:12:26.144 2249 Delete type=2 #5
+2020/12/06-17:12:30.230 2249 Level-0 table #11: started
+2020/12/06-17:12:30.245 2249 Level-0 table #11: 1265067 bytes OK
+2020/12/06-17:12:30.252 2249 Delete type=0 #6
+2020/12/06-17:12:30.583 2249 Compacting 1@1 + 2@2 files
+2020/12/06-17:12:30.620 2249 Generated table #12@1: 9294 keys, 2149130 bytes
+2020/12/06-17:12:30.644 2249 Generated table #13@1: 6466 keys, 1380714 bytes
+2020/12/06-17:12:30.644 2249 Compacted 1@1 + 2@2 files => 3529844 bytes
+2020/12/06-17:12:30.647 2249 compacted to: files[ 0 0 2 0 0 0 0 ]
+2020/12/06-17:12:30.647 2249 Delete type=2 #8
+2020/12/06-17:12:30.647 2249 Delete type=2 #11
+2020/12/06-17:12:30.648 2249 Delete type=2 #9
+2020/12/06-17:12:31.248 2249 Level-0 table #15: started
+2020/12/06-17:12:31.281 2249 Level-0 table #15: 1008593 bytes OK
+2020/12/06-17:12:31.285 2249 Delete type=0 #10
+2020/12/06-17:12:31.501 2249 Compacting 1@1 + 2@2 files
+2020/12/06-17:12:31.545 2249 Generated table #16@1: 11893 keys, 2297321 bytes
+2020/12/06-17:12:31.572 2249 Generated table #17@1: 7817 keys, 2151778 bytes
+2020/12/06-17:12:31.577 2249 Generated table #18@1: 753 keys, 89849 bytes
+2020/12/06-17:12:31.577 2249 Compacted 1@1 + 2@2 files => 4538948 bytes
+2020/12/06-17:12:31.580 2249 compacted to: files[ 0 0 3 0 0 0 0 ]
+2020/12/06-17:12:31.581 2249 Delete type=2 #13
+2020/12/06-17:12:31.581 2249 Delete type=2 #12
+2020/12/06-17:12:31.581 2249 Delete type=2 #15

@@ -1,0 +1,7 @@
+[2020-12-07 08:45:47.790] [renderer1] [error] Network Error: Error: Network Error
+    at e.exports (/opt/visual-studio-code/resources/app/node_modules.asar/tas-client-umd/lib/tas-client-umd.js:1:7511)
+    at XMLHttpRequest.p.onerror (/opt/visual-studio-code/resources/app/node_modules.asar/tas-client-umd/lib/tas-client-umd.js:1:6478)
+[2020-12-07 08:45:47.917] [renderer1] [warning] Error querying extensions gallery {}
+[2020-12-07 08:45:48.150] [renderer1] [error] net::ERR_NAME_NOT_RESOLVED: Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (electron/js2c/browser_init.js:105:6395)
+    at SimpleURLLoaderWrapper.emit (events.js:223:5)

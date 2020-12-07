@@ -1,0 +1,73 @@
+Looking for git in: git
+Using git 2.29.2 from git
+> git rev-parse --git-dir
+Open repository: /home/jf/projects/LTO
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/jf/projects/LTO/.git/refs/remotes/origin/develop', is most likely packed.
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :LTO.UI.SeasonalWork/.env copy.example
+> git ls-files --stage -- /home/jf/projects/LTO/LTO.UI.SeasonalWork/.env copy.example
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/jf/projects/LTO/.git/refs/remotes/origin/develop', is most likely packed.
+> git config --get commit.template
+> git show --textconv :LTO.UI.SeasonalWork/.env
+> git ls-files --stage -- /home/jf/projects/LTO/LTO.UI.SeasonalWork/.env
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/jf/projects/LTO/.git/refs/remotes/origin/develop', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/jf/projects/LTO/.git/refs/remotes/origin/develop', is most likely packed.
+> git config --get commit.template
+> git show --textconv :LTO.UI.SeasonalWork/README.md
+> git ls-files --stage -- /home/jf/projects/LTO/LTO.UI.SeasonalWork/README.md
+> git cat-file -s 50354b4139d918d272f34f4aa6eaded7555a1e09
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git ls-files --stage -- /home/jf/projects/LTO/LTO.UI.SeasonalWork/README.md
+> git cat-file -s 50354b4139d918d272f34f4aa6eaded7555a1e09
+> git show --textconv :LTO.UI.SeasonalWork/README.md
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/jf/projects/LTO/.git/refs/remotes/origin/develop', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/jf/projects/LTO/.git/refs/remotes/origin/develop', is most likely packed.
+> git config --get commit.template

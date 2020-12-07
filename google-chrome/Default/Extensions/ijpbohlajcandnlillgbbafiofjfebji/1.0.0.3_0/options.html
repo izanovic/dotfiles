@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <title>Options | New Tab Redirect Plus</title>
+  <script type="text/javascript" src="options.js"></script>
+  <link rel="stylesheet" href="options.css" type="text/css" />
+</head>
+
+<body>
+  <div id="status">Options Saved.</div>
+
+  <div id="header">
+    <h1>New Tab Redirect Plus! Options</h1>
+  </div>
+  <div class="section-header first"><em>These settings will replace your 'new tab' page.</em></div>
+
+  <p><span class="desc-text">My new tab page should show this URL:</span> <input type="text" id="custom-url">
+
+    <span style="display:none;"><input type="checkbox" id="old" /> <small>Old redirect (address bar doesn't focus)</small></span>
+
+    <button id="save-button" style="font-weight:bold">Save</button>
+    <button id="cancel-button">Cancel</button>
+    <div style="display:none"><input type="checkbox" id="hidetext" /> <small>Hide "Redirecting..." hint</small></div>
+  </p>
+
+  <em>Note:  Use file:// for local files (e.g. file://C:\example.html)</em>
+
+  <h2>Quick Save&hellip; <small>click a button below!</small></h2>
+  <p>Original Chrome pages:</p>
+  <ul id="chromes" class="horizontal-links"></ul>
+
+  <p class="fix">About Pages:</p>
+  <ul id="abouts" class="horizontal-links"></ul>
+
+  <p class="fix">Popular Pages:</p>
+  <ul id="popular" class="horizontal-links"></ul>
+
+
+  <script src="googleAnalytics.js"></script>
+  <script src="googleAnalyticsMaster.js"></script>
+</body>
+
+</html>

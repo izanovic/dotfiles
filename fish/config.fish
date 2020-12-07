@@ -57,3 +57,5 @@ end
 funcsave pp
 
 export BAT_THEME="Darcula"
+
+starship init fish | source

@@ -1,0 +1,23 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "chrome_url_overrides": {
+      "newtab": "redirect.html"
+   },
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "Sets a user-specified URL to load in new tabs.",
+   "icons": {
+      "128": "icon128.png",
+      "19": "icon19.png",
+      "200": "icon200.png"
+   },
+   "incognito": "split",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkaGmoMWgE58H0GELfPS+bpD0/nLVk+/M4aA5o92I9+uqOsAwhNBC0t0Lc7m35L2wNb5RmZDGYZuczvUa7nC6CkQXNSd0mqyNV561W2eX03DtKjfkyxWgOtzA3qxAkPVGai3qtnF0V7evzjs9kYWXHhNHbfDuE8sTlLg2EhK5u8olM2pafKFB1mkThjUdJQhDQUqQZD1uSca7favzvcc2yYYM635iLB4157zqT0GGFXkdaBAy51qzhMR3p4qdsN/pk8sAnG1M4W5H7cjvbUP87lOJ52RlUDGHzNMTLOsOdMJV95yLeTN4YtHxJyK0vhGIsrhVsPxvv0MCP9RAnue3MwIDAQAB",
+   "manifest_version": 2,
+   "name": "New Tab Redirect Plus!",
+   "options_page": "options.html",
+   "permissions": [ "tabs", "storage", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0.3"
+}

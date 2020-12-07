@@ -146,7 +146,8 @@ set $MON3 DP-1
 #bindsym $mod+$mod2+m exec --no-startup-id xrandr --output HDMI-1 --size 1920x1080 --pos 0x0 --rotate left --output DP-1 --size 1920x1080 --pos 1080x0 --rotate right --output eDP-1 --size 1920x1080 --pos 2160x800 --rotate normal --primary
 
 bindsym $mod+$mod2+m exec --no-startup-id xrandr --output HDMI-1 --size 2560x1440 --pos 0x0 --rotate normal --output eDP-1 --size 1920x1080 --pos 2560x1000 --rotate normal --primary
-bindsym $mod+$mod2+n exec --no-startup-id xrandr --output eDP-1-1 --size 1920x1080 --pos 0x0 --rotate normal --primary --output HDMI-1-1 --size 2560x1440 --pos 1920x0 --rotate normal 
+bindsym $mod+$mod2+n exec --no-startup-id xrandr --output eDP1 --size 1920x1080 --pos 0x0 --rotate normal --primary --output HDMI1 --size 2560x1440 --pos 1920x0 --rotate normal 
+bindsym $mod+n exec --no-startup-id xrandr --output eDP1 --mode 1920x1080 --pos 0x0 --rotate normal --primary --output HDMI1 --mode 2560x1440 --pos 1920x0 --rotate normal 
 
 # output of workpace
 workspace $wsm1 output $MON2
@@ -234,6 +235,7 @@ bindsym $mod+Shift+grave move container to workspace $wsm1
 #workspace_auto_back_and_forth yes
 
 # programs
+#
 bindsym $mod+$mod2+b exec --no-startup-id google-chrome --start-fullscreen
 bindsym $mod+b exec --no-startup-id i3-msg 'exec firefox --start-fullscreen'
 bindsym $mod+$mod2+f	exec --no-startup-id nautilus
@@ -251,7 +253,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
-set $Locker  i3lock-fancy -g -- scrot -z && sleep 1
+set $Locker i3lock-fancy -g -- scrot -z && sleep 1
 
 mode "mode_system" {
     bindsym l exec --no-startup-id $Locker, mode "default"
@@ -315,7 +317,7 @@ bindsym $mod+$mod2+Right resize grow width $resize px or $resize ppt
 
 # lockscreen
 #bindsym $mod+x exec
-exec --no-startup-id compton --config ~/.config/compton.conf -b
+# exec --no-startup-id compton --config ~/.config/compton.conf -b
 
 # Let specific windows float
 for_window [window_role="pop-up"]                     floating enable,move absolute center

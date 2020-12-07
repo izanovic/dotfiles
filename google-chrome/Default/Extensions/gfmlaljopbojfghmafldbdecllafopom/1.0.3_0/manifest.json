@@ -1,0 +1,19 @@
+{
+   "author": "Andrey Izman",
+   "browser_action": {
+      "default_icon": "images/icon32.png"
+   },
+   "description": "Darcula Theme for DevTools",
+   "devtools_page": "devtools.html",
+   "homepage_url": "https://github.com/mervick/chrome-devtools-darcula-theme",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt/JHKsxm3dZVhjPTzjf9XAUwESj7SsdSIiGK3zIX3TI6sqeX4OGTruoe4IiRSA7JDATgqI+jvrvrwddQMhzJXyeKJeTRdJXt6+lxaFD4MTnbrf1ma0psk8oWH399gzwxfECc5Fa5DzIF2a0OJ9+QtHcFIDSN5WaUbAzxfdAxXSsRxcu+wgd+bbSW2QlZgUl1VUuxITc3COIzM4kDzDsDO0KRzhV2N2t07fGD6k+B39OoI5h+y1MYxn25wF+Qy4FbLspcz7Xqj6C09fWeNtWdUOtHn1pNpHuvD93HhFlR/urTY3/BxygzSoqTJ6G3Ol1ULALH5lKMfaCoG7Xq0G7vqwIDAQAB",
+   "manifest_version": 2,
+   "name": "Darcula Theme for DevTools",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.3"
+}

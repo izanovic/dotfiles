@@ -1,0 +1,3 @@
+[2020-12-07 08:35:21.302] [sharedprocess] [info] main {"machineId":"28d19d4ec318b00f645d6ce024df80c8c82487b441fba942bcaa51a02a912522","windowId":2}
+[2020-12-07 08:35:21.330] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/jf/.config/Code/User/snippets'
+[2020-12-07 08:36:01.311] [sharedprocess] [info] Starting to clean up unused language packs.
