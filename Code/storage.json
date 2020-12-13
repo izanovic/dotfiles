@@ -40,8 +40,7 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -99,8 +98,7 @@
                     },
                     {
                         "id": "workbench.action.files.saveAll",
-                        "label": "Save A&&ll",
-                        "enabled": false
+                        "label": "Save A&&ll"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -378,8 +376,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "Show &&Side Bar",
-                                    "checked": true
+                                    "label": "Show &&Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
@@ -1459,17 +1456,17 @@
         }
     },
     "theme": "vs-dark",
-    "themeBackground": "#1e1e1e",
+    "themeBackground": "#212121",
     "windowsState": {
         "lastActiveWindow": {
             "folder": "file:///home/jf/projects/LTO/LTO.UI.SeasonalWork",
             "backupPath": "/home/jf/.config/Code/Backups/c2ea85bb6c89ed6b609a5268779100d3",
             "uiState": {
                 "mode": 1,
-                "x": 1921,
+                "x": 3113,
                 "y": 21,
-                "width": 2558,
-                "height": 1091
+                "width": 1366,
+                "height": 1177
             }
         },
         "openedWindows": []

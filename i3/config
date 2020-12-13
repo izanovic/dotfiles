@@ -237,7 +237,8 @@ bindsym $mod+Shift+grave move container to workspace $wsm1
 # programs
 #
 bindsym $mod+$mod2+b exec --no-startup-id google-chrome --start-fullscreen
-bindsym $mod+b exec --no-startup-id i3-msg 'exec firefox --start-fullscreen'
+bindsym $mod+Shift+b exec --no-startup-id i3-msg 'exec firefox --start-fullscreen'
+bindsym $mod+b exec --no-startup-id i3-msg 'exec qutebrowser'
 bindsym $mod+$mod2+f	exec --no-startup-id nautilus
 bindsym $mod+o	exec "sh -c 'cd ~/oni2 && esy run'"
 
@@ -253,7 +254,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
-set $Locker i3lock-fancy -g -- scrot -z && sleep 1
+set $Locker i3lock-fancy -g
 
 mode "mode_system" {
     bindsym l exec --no-startup-id $Locker, mode "default"

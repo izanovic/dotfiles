@@ -1,1 +1,3 @@
-2020/12/06-20:37:43.658 4b20 Reusing MANIFEST /home/jf/.config/Code/Local Storage/leveldb/MANIFEST-000001
+2020/12/12-16:49:01.130 100ed Reusing MANIFEST /home/jf/.config/Code/Local Storage/leveldb/MANIFEST-000001
+2020/12/12-16:49:01.131 100ed Recovering log #3
+2020/12/12-16:49:01.131 100ed Reusing old log /home/jf/.config/Code/Local Storage/leveldb/000003.log 
