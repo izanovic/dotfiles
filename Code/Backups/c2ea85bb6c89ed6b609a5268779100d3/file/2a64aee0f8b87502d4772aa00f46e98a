@@ -1,0 +1,17 @@
+file:///home/jf/projects/LTO/LTO.UI.SeasonalWork/src/components/checkbox/Checkbox.spec.ts {"mtime":1607797585618,"ctime":1607326899712,"size":397,"etag":"365sf22encp","orphaned":false}
+import { shallowMount, Wrapper, createLocalVue } from '@vue/test-utils';
+import Checkbox from './Checkbox.vue';
+
+const localVue = createLocalVue();
+
+describe('Checkbox.vue', () => {
+  let wrapper: Wrapper<Checkbox>;
+
+  beforeEach(() => {
+    wrapper = shallowMount(Checkbox, { localVue });
+  });
+
+  it('test default render', () => {
+    expect(wrapper.html().length).toBeGreaterThan(0);
+  });
+});

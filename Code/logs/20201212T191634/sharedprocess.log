@@ -1,0 +1,38 @@
+[2020-12-12 19:16:37.528] [sharedprocess] [info] main {"machineId":"28d19d4ec318b00f645d6ce024df80c8c82487b441fba942bcaa51a02a912522","windowId":2}
+[2020-12-12 19:17:07.685] [sharedprocess] [info] Installing extension: zhuangtongfa.material-theme
+[2020-12-12 19:17:07.908] [sharedprocess] [info] Downloaded extension: zhuangtongfa.material-theme undefined
+[2020-12-12 19:17:08.015] [sharedprocess] [info] Extracted extension to /home/jf/.vscode/extensions/.zhuangtongfa.material-theme-3.9.11: zhuangtongfa.material-theme
+[2020-12-12 19:17:08.015] [sharedprocess] [info] Renamed to /home/jf/.vscode/extensions/zhuangtongfa.material-theme-3.9.11
+[2020-12-12 19:17:08.016] [sharedprocess] [info] Installation completed. zhuangtongfa.material-theme
+[2020-12-12 19:17:08.028] [sharedprocess] [info] Extensions installed successfully: zhuangtongfa.material-theme
+[2020-12-12 19:17:17.536] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-12-12 19:18:34.447] [sharedprocess] [info] Installing extension: octref.vetur
+[2020-12-12 19:18:37.381] [sharedprocess] [info] Downloaded extension: octref.vetur undefined
+[2020-12-12 19:18:40.090] [sharedprocess] [info] Extracted extension to /home/jf/.vscode/extensions/.octref.vetur-0.31.2: octref.vetur
+[2020-12-12 19:18:40.090] [sharedprocess] [info] Renamed to /home/jf/.vscode/extensions/octref.vetur-0.31.2
+[2020-12-12 19:18:40.091] [sharedprocess] [info] Installation completed. octref.vetur
+[2020-12-12 19:18:40.100] [sharedprocess] [info] Extensions installed successfully: octref.vetur
+[2020-12-12 19:19:29.575] [sharedprocess] [info] Installing extension: azemoh.one-monokai
+[2020-12-12 19:19:29.886] [sharedprocess] [info] Downloaded extension: azemoh.one-monokai undefined
+[2020-12-12 19:19:29.921] [sharedprocess] [info] Extracted extension to /home/jf/.vscode/extensions/.azemoh.one-monokai-0.5.0: azemoh.one-monokai
+[2020-12-12 19:19:29.921] [sharedprocess] [info] Renamed to /home/jf/.vscode/extensions/azemoh.one-monokai-0.5.0
+[2020-12-12 19:19:29.922] [sharedprocess] [info] Installation completed. azemoh.one-monokai
+[2020-12-12 19:19:29.926] [sharedprocess] [info] Extensions installed successfully: azemoh.one-monokai
+[2020-12-12 19:25:52.090] [sharedprocess] [info] Installing extension: equinusocio.vsc-material-theme
+[2020-12-12 19:25:52.447] [sharedprocess] [info] Downloaded extension: equinusocio.vsc-material-theme undefined
+[2020-12-12 19:25:52.554] [sharedprocess] [info] Extracted extension to /home/jf/.vscode/extensions/.equinusocio.vsc-material-theme-33.0.0: equinusocio.vsc-material-theme
+[2020-12-12 19:25:52.554] [sharedprocess] [info] Renamed to /home/jf/.vscode/extensions/equinusocio.vsc-material-theme-33.0.0
+[2020-12-12 19:25:52.555] [sharedprocess] [info] Installation completed. equinusocio.vsc-material-theme
+[2020-12-12 19:25:52.739] [sharedprocess] [info] Installing extension: equinusocio.vsc-material-theme-icons
+[2020-12-12 19:25:52.739] [sharedprocess] [info] Installing extension: equinusocio.vsc-community-material-theme
+[2020-12-12 19:25:52.999] [sharedprocess] [info] Downloaded extension: equinusocio.vsc-community-material-theme undefined
+[2020-12-12 19:25:53.082] [sharedprocess] [info] Extracted extension to /home/jf/.vscode/extensions/.equinusocio.vsc-community-material-theme-1.4.2: equinusocio.vsc-community-material-theme
+[2020-12-12 19:25:53.082] [sharedprocess] [info] Renamed to /home/jf/.vscode/extensions/equinusocio.vsc-community-material-theme-1.4.2
+[2020-12-12 19:25:53.085] [sharedprocess] [info] Installation completed. equinusocio.vsc-community-material-theme
+[2020-12-12 19:25:53.094] [sharedprocess] [info] Extensions installed successfully: equinusocio.vsc-community-material-theme
+[2020-12-12 19:25:53.437] [sharedprocess] [info] Downloaded extension: equinusocio.vsc-material-theme-icons undefined
+[2020-12-12 19:25:54.171] [sharedprocess] [info] Extracted extension to /home/jf/.vscode/extensions/.equinusocio.vsc-material-theme-icons-1.2.0: equinusocio.vsc-material-theme-icons
+[2020-12-12 19:25:54.171] [sharedprocess] [info] Renamed to /home/jf/.vscode/extensions/equinusocio.vsc-material-theme-icons-1.2.0
+[2020-12-12 19:25:54.172] [sharedprocess] [info] Installation completed. equinusocio.vsc-material-theme-icons
+[2020-12-12 19:25:54.179] [sharedprocess] [info] Extensions installed successfully: equinusocio.vsc-material-theme-icons
+[2020-12-12 19:25:54.180] [sharedprocess] [info] Extensions installed successfully: equinusocio.vsc-material-theme

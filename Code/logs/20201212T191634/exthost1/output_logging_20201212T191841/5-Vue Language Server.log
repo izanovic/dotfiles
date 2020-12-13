@@ -1,0 +1,67 @@
+Vetur initialized
+[INFO ] Find node_modules paths in /home/jf/projects/LTO/LTO.UI.SeasonalWork - 216ms
+[Error - 7:18:41 PM] Error: No useWorkspaceDependencies.
+    at loadTypeScript (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:576:2471)
+    at createDependencyService (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:576:3182)
+    at _D.getProjectService (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:867:9528)
+    at async _D.onDocumentSymbol (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:867:14355)
+[INFO ] Loaded bundled typescript@4.1.2.
+[Error - 7:18:41 PM] Error: No useWorkspaceDependencies.
+    at loadCommonDep (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:576:2962)
+    at createDependencyService (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:576:3201)
+    at async _D.getProjectService (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:867:9522)
+    at async _D.onDocumentSymbol (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:867:14355)
+[INFO ] Loaded bundled prettier.
+[Error - 7:18:41 PM] Error: No useWorkspaceDependencies.
+    at loadCommonDep (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:576:2962)
+    at createDependencyService (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:576:3257)
+    at async _D.getProjectService (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:867:9522)
+    at async _D.onDocumentSymbol (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:867:14355)
+[INFO ] Loaded bundled @starptech/prettyhtml.
+[Error - 7:18:41 PM] Error: No useWorkspaceDependencies.
+    at loadCommonDep (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:576:2962)
+    at createDependencyService (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:576:3336)
+    at async _D.getProjectService (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:867:9522)
+    at async _D.onDocumentSymbol (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:867:14355)
+[INFO ] Loaded bundled prettier-eslint.
+[Error - 7:18:41 PM] Error: No useWorkspaceDependencies.
+    at loadCommonDep (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:576:2962)
+    at createDependencyService (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:576:3403)
+    at async _D.getProjectService (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:867:9522)
+    at async _D.onDocumentSymbol (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:867:14355)
+[INFO ] Loaded bundled prettier-tslint.
+[Error - 7:18:41 PM] Error: No useWorkspaceDependencies.
+    at loadCommonDep (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:576:2962)
+    at createDependencyService (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:576:3471)
+    at async _D.getProjectService (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:867:9522)
+    at async _D.onDocumentSymbol (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:867:14355)
+[INFO ] Loaded bundled stylus-supremacy.
+[Error - 7:18:41 PM] Error: No useWorkspaceDependencies.
+    at loadCommonDep (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:576:2962)
+    at createDependencyService (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:576:3545)
+    at async _D.getProjectService (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:867:9522)
+    at async _D.onDocumentSymbol (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:867:14355)
+[INFO ] Loaded bundled @prettier/plugin-pug.
+[Error - 7:18:41 PM] Error: ENOENT: no such file or directory, scandir '/home/jf/projects/LTO/LTO.UI.SeasonalWork/.vscode/vetur/snippets'
+    at Object.readdirSync (fs.js:854:3)
+    at Object.fs.readdirSync (electron/js2c/asar.js:621:39)
+    at loadAllSnippets (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:617:1370)
+    at new SnippetManager (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:617:539)
+    at getVueMode (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:672:11015)
+    at yD.init (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:866:1735)
+    at async createProjectService (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:866:3611)
+    at async _D.getProjectService (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:867:9684)
+    at async _D.onDocumentSymbol (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:867:14355)
+[Error - 7:18:41 PM] Error: ENOENT: no such file or directory, scandir '/home/jf/.config/Code/User/snippets/vetur'
+    at Object.readdirSync (fs.js:854:3)
+    at Object.fs.readdirSync (electron/js2c/asar.js:621:39)
+    at loadAllSnippets (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:617:1370)
+    at new SnippetManager (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:617:561)
+    at getVueMode (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:672:11015)
+    at yD.init (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:866:1735)
+    at async createProjectService (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:866:3611)
+    at async _D.getProjectService (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:867:9684)
+    at async _D.onDocumentSymbol (/home/jf/.vscode/extensions/octref.vetur-0.31.2/server/dist/vls.js:867:14355)
+[INFO ] update /home/jf/projects/LTO/LTO.UI.SeasonalWork/src/components/checkbox/Checkbox.spec.ts in ts language service.
+[INFO ] update /home/jf/projects/LTO/LTO.UI.SeasonalWork/src/components/checkbox/Checkbox.spec.ts in ts language service.
+[INFO ] update /home/jf/projects/LTO/LTO.UI.SeasonalWork/src/components/checkbox/Checkbox.spec.ts in ts language service.
