@@ -6,7 +6,5 @@
 
 config_version: 2
 settings:
-  bindings.commands:
-    global:
-      normal:
-        X: hint links spawn mpv {hint-url}
+  content.notifications:
+    https://www.reddit.com: false

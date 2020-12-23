@@ -1,3 +1,5 @@
+config.bind('X', 'hint links spawn mpv {hint-url}')
+
 # base16-qutebrowser (https://github.com/theova/base16-qutebrowser)
 # Base16 qutebrowser template by theova
 # Gruvbox dark, hard scheme by Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
