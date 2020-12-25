@@ -1,25 +1,24 @@
-2020/12/23-09:27:46.401 812 Reusing MANIFEST /home/jf/.config/teams-for-linux/Partitions/teams-4-linux/IndexedDB/https_teams.microsoft.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/12/23-09:27:46.401 812 Recovering log #472
-2020/12/23-09:27:46.407 812 Reusing old log /home/jf/.config/teams-for-linux/Partitions/teams-4-linux/IndexedDB/https_teams.microsoft.com_0.indexeddb.leveldb/000472.log 
-2020/12/23-10:11:57.127 14064 Level-0 table #483: started
-2020/12/23-10:11:57.144 14064 Level-0 table #483: 1153537 bytes OK
-2020/12/23-10:11:57.148 14064 Delete type=0 #472
-2020/12/23-10:12:41.253 14064 Compacting 1@1 + 6@2 files
-2020/12/23-10:12:41.284 14064 Generated table #484@1: 8631 keys, 2159253 bytes
-2020/12/23-10:12:41.337 14064 Generated table #485@1: 23820 keys, 2218363 bytes
-2020/12/23-10:12:41.360 14064 Generated table #486@1: 1060 keys, 2134891 bytes
-2020/12/23-10:12:41.393 14064 Generated table #487@1: 821 keys, 2248851 bytes
-2020/12/23-10:12:41.425 14064 Generated table #488@1: 902 keys, 2120109 bytes
-2020/12/23-10:12:41.468 14064 Generated table #489@1: 15922 keys, 2210050 bytes
-2020/12/23-10:12:41.468 14064 Compacted 1@1 + 6@2 files => 13091517 bytes
-2020/12/23-10:12:41.472 14064 compacted to: files[ 0 0 15 0 0 0 0 ]
-2020/12/23-10:12:41.472 14064 Delete type=2 #480
-2020/12/23-10:12:41.472 14064 Delete type=2 #479
-2020/12/23-10:12:41.472 14064 Delete type=2 #483
-2020/12/23-10:12:41.472 14064 Delete type=2 #476
-2020/12/23-10:12:41.472 14064 Delete type=2 #477
-2020/12/23-10:12:41.473 14064 Delete type=2 #475
-2020/12/23-10:12:41.473 14064 Delete type=2 #478
-2020/12/23-11:11:09.053 14064 Level-0 table #491: started
-2020/12/23-11:11:09.074 14064 Level-0 table #491: 1159157 bytes OK
-2020/12/23-11:11:09.078 14064 Delete type=0 #482
+2020/12/25-14:19:50.978 8782 Reusing MANIFEST /home/jf/.config/teams-for-linux/Partitions/teams-4-linux/IndexedDB/https_teams.microsoft.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/12/25-14:19:50.978 8782 Recovering log #500
+2020/12/25-14:19:50.990 8782 Reusing old log /home/jf/.config/teams-for-linux/Partitions/teams-4-linux/IndexedDB/https_teams.microsoft.com_0.indexeddb.leveldb/000500.log 
+2020/12/25-14:19:56.089 9366 Level-0 table #511: started
+2020/12/25-14:19:56.106 9366 Level-0 table #511: 1955675 bytes OK
+2020/12/25-14:19:56.110 9366 Delete type=0 #500
+2020/12/25-14:19:58.419 9366 Compacting 1@1 + 7@2 files
+2020/12/25-14:19:58.463 9366 Generated table #512@1: 8590 keys, 2159559 bytes
+2020/12/25-14:19:58.529 9366 Generated table #513@1: 24560 keys, 2222833 bytes
+2020/12/25-14:19:58.554 9366 Generated table #514@1: 1056 keys, 2131637 bytes
+2020/12/25-14:19:58.579 9366 Generated table #515@1: 837 keys, 2124863 bytes
+2020/12/25-14:19:58.603 9366 Generated table #516@1: 547 keys, 2115822 bytes
+2020/12/25-14:19:58.634 9366 Generated table #517@1: 14836 keys, 2182426 bytes
+2020/12/25-14:19:58.645 9366 Generated table #518@1: 2400 keys, 795410 bytes
+2020/12/25-14:19:58.645 9366 Compacted 1@1 + 7@2 files => 13732550 bytes
+2020/12/25-14:19:58.652 9366 compacted to: files[ 0 0 7 0 0 0 0 ]
+2020/12/25-14:19:58.652 9366 Delete type=2 #506
+2020/12/25-14:19:58.652 9366 Delete type=2 #505
+2020/12/25-14:19:58.652 9366 Delete type=2 #503
+2020/12/25-14:19:58.652 9366 Delete type=2 #502
+2020/12/25-14:19:58.653 9366 Delete type=2 #508
+2020/12/25-14:19:58.653 9366 Delete type=2 #507
+2020/12/25-14:19:58.653 9366 Delete type=2 #511
+2020/12/25-14:19:58.654 9366 Delete type=2 #504

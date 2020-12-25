@@ -1,13 +1,13 @@
-2020/12/22-16:17:46.237 1c0f3 Reusing MANIFEST /home/jf/.config/google-chrome/Default/IndexedDB/chrome-extension_mlomiejdfkolichcflejclcbmpeaniij_0.indexeddb.leveldb/MANIFEST-000001
-2020/12/22-16:17:46.237 1c0f3 Recovering log #15
-2020/12/22-16:17:46.240 1c0f3 Reusing old log /home/jf/.config/google-chrome/Default/IndexedDB/chrome-extension_mlomiejdfkolichcflejclcbmpeaniij_0.indexeddb.leveldb/000015.log 
-2020/12/22-16:17:46.423 1c114 Level-0 table #20: started
-2020/12/22-16:17:46.435 1c114 Level-0 table #20: 176702 bytes OK
-2020/12/22-16:17:46.443 1c114 Delete type=0 #15
-2020/12/22-16:17:46.443 1c114 Manual compaction at level-0 from '\x00\x0c\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0d\x00\x00\x00' @ 0 : 0; will stop at (end)
-2020/12/22-16:17:47.408 1c11d Compacting 1@1 + 1@2 files
-2020/12/22-16:17:47.417 1c11d Generated table #21@1: 827 keys, 60008 bytes
-2020/12/22-16:17:47.417 1c11d Compacted 1@1 + 1@2 files => 60008 bytes
-2020/12/22-16:17:47.427 1c11d compacted to: files[ 0 0 1 0 0 0 0 ]
-2020/12/22-16:17:47.427 1c11d Delete type=2 #20
-2020/12/22-16:17:47.427 1c11d Delete type=2 #17
+2020/12/24-11:19:54.135 8c15a Reusing MANIFEST /home/jf/.config/google-chrome/Default/IndexedDB/chrome-extension_mlomiejdfkolichcflejclcbmpeaniij_0.indexeddb.leveldb/MANIFEST-000001
+2020/12/24-11:19:54.135 8c15a Recovering log #23
+2020/12/24-11:19:54.136 8c15a Reusing old log /home/jf/.config/google-chrome/Default/IndexedDB/chrome-extension_mlomiejdfkolichcflejclcbmpeaniij_0.indexeddb.leveldb/000023.log 
+2020/12/24-11:19:54.273 8c1c8 Level-0 table #28: started
+2020/12/24-11:19:54.280 8c1c8 Level-0 table #28: 93296 bytes OK
+2020/12/24-11:19:54.285 8c1c8 Delete type=0 #23
+2020/12/24-11:19:54.285 8c1c8 Manual compaction at level-0 from '\x00\x0e\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0f\x00\x00\x00' @ 0 : 0; will stop at (end)
+2020/12/24-11:19:55.349 8c162 Compacting 1@1 + 1@2 files
+2020/12/24-11:19:55.356 8c162 Generated table #29@1: 856 keys, 62426 bytes
+2020/12/24-11:19:55.356 8c162 Compacted 1@1 + 1@2 files => 62426 bytes
+2020/12/24-11:19:55.360 8c162 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/12/24-11:19:55.360 8c162 Delete type=2 #28
+2020/12/24-11:19:55.360 8c162 Delete type=2 #25

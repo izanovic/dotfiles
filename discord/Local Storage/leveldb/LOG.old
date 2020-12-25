@@ -1,3 +1,24 @@
-2020/12/22-20:48:41.155 78157 Reusing MANIFEST /home/jf/.config/discord/Local Storage/leveldb/MANIFEST-000001
-2020/12/22-20:48:41.156 78157 Recovering log #62
-2020/12/22-20:48:41.156 78157 Reusing old log /home/jf/.config/discord/Local Storage/leveldb/000062.log 
+2020/12/22-21:08:48.392 99c45 Reusing MANIFEST /home/jf/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2020/12/22-21:08:48.392 99c45 Recovering log #62
+2020/12/22-21:08:48.392 99c45 Reusing old log /home/jf/.config/discord/Local Storage/leveldb/000062.log 
+2020/12/22-21:23:47.696 9b16e Level-0 table #66: started
+2020/12/22-21:23:47.715 9b16e Level-0 table #66: 13993 bytes OK
+2020/12/22-21:23:47.720 9b16e Delete type=0 #62
+2020/12/22-21:24:37.729 9b16e Level-0 table #68: started
+2020/12/22-21:24:37.748 9b16e Level-0 table #68: 13600 bytes OK
+2020/12/22-21:24:37.754 9b16e Delete type=0 #65
+2020/12/22-21:27:49.351 9b16e Level-0 table #70: started
+2020/12/22-21:27:49.371 9b16e Level-0 table #70: 13601 bytes OK
+2020/12/22-21:27:49.376 9b16e Delete type=0 #67
+2020/12/22-21:27:49.376 9b16e Compacting 4@0 + 1@1 files
+2020/12/22-21:27:49.382 9b16e Generated table #71@0: 75 keys, 11725 bytes
+2020/12/22-21:27:49.382 9b16e Compacted 4@0 + 1@1 files => 11725 bytes
+2020/12/22-21:27:49.387 9b16e compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/12/22-21:27:49.387 9b16e Delete type=2 #61
+2020/12/22-21:27:49.387 9b16e Delete type=2 #66
+2020/12/22-21:27:49.387 9b16e Delete type=2 #63
+2020/12/22-21:27:49.387 9b16e Delete type=2 #68
+2020/12/22-21:27:49.387 9b16e Delete type=2 #70
+2020/12/22-21:34:49.351 9b16e Level-0 table #73: started
+2020/12/22-21:34:49.370 9b16e Level-0 table #73: 13590 bytes OK
+2020/12/22-21:34:49.375 9b16e Delete type=0 #69
