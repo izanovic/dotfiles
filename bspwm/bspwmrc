@@ -1,0 +1,30 @@
+#! /bin/sh
+bspc -r "*"
+# run the xrandr command if an external monitor is connected to the
+# laptop.  This must be executed before the polybar command, so that
+# polybar can set the two separate bars properly.
+if [ -x $HOME/.config/sxhkd/scripts/dual-monitor.sh ];then
+  dual-monitor.sh
+  # bspc monitor eDP1 -d I II III IV V VI VII VIII IX X
+  # bspc monitor HDMI1 -d 1 2 3 4 5 6 7 8 9 10
+fi
+xrandr --output eDP1 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI1 --primary --mode 2560x1440 --pos 1920x0 --rotate normal 
+bspc monitor HDMI1 -d 1 2 3 4 5 6 7 8 9 10
+bspc monitor eDP1 -d 1 2 3 4 5 6 7 8 9 10
+
+pgrep -x sxhkd > /dev/null || sxhkd & polybar default &
+
+# gap=15
+
+
+bspc config border_width         2
+bspc config window_gap           4
+bspc config top_padding          -4
+
+bspc config split_ratio                 0.50
+bspc config borderless_monocle          true
+bspc config gapless_monocle             true
+bspc config focus_follows_pointer       true
+bspc config history_aware_focus         true
+
+# bspc rule -a firefox:^2 hidden=on

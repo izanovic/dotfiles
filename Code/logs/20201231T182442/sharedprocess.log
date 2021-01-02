@@ -1,0 +1,26 @@
+[2020-12-31 18:24:46.427] [sharedprocess] [info] main {"machineId":"28d19d4ec318b00f645d6ce024df80c8c82487b441fba942bcaa51a02a912522","windowId":2}
+[2020-12-31 18:24:47.934] [sharedprocess] [info] Installing extension: equinusocio.vsc-material-theme
+[2020-12-31 18:24:47.935] [sharedprocess] [info] Installing extension: equinusocio.vsc-material-theme-icons
+[2020-12-31 18:24:47.936] [sharedprocess] [info] Installing extension: octref.vetur
+[2020-12-31 18:24:47.937] [sharedprocess] [info] Installing extension: zhuangtongfa.material-theme
+[2020-12-31 18:24:49.381] [sharedprocess] [info] Downloaded extension: zhuangtongfa.material-theme undefined
+[2020-12-31 18:24:49.514] [sharedprocess] [info] Extracted extension to /home/jf/.vscode/extensions/.zhuangtongfa.material-theme-3.9.12: zhuangtongfa.material-theme
+[2020-12-31 18:24:49.514] [sharedprocess] [info] Renamed to /home/jf/.vscode/extensions/zhuangtongfa.material-theme-3.9.12
+[2020-12-31 18:24:49.515] [sharedprocess] [info] Installation completed. zhuangtongfa.material-theme
+[2020-12-31 18:24:49.528] [sharedprocess] [info] Extensions installed successfully: zhuangtongfa.material-theme
+[2020-12-31 18:24:49.707] [sharedprocess] [info] Downloaded extension: equinusocio.vsc-material-theme undefined
+[2020-12-31 18:24:49.810] [sharedprocess] [info] Extracted extension to /home/jf/.vscode/extensions/.equinusocio.vsc-material-theme-33.1.2: equinusocio.vsc-material-theme
+[2020-12-31 18:24:49.810] [sharedprocess] [info] Renamed to /home/jf/.vscode/extensions/equinusocio.vsc-material-theme-33.1.2
+[2020-12-31 18:24:49.811] [sharedprocess] [info] Installation completed. equinusocio.vsc-material-theme
+[2020-12-31 18:24:49.819] [sharedprocess] [info] Extensions installed successfully: equinusocio.vsc-material-theme
+[2020-12-31 18:24:51.987] [sharedprocess] [info] Downloaded extension: equinusocio.vsc-material-theme-icons undefined
+[2020-12-31 18:24:53.986] [sharedprocess] [info] Extracted extension to /home/jf/.vscode/extensions/.equinusocio.vsc-material-theme-icons-1.2.2: equinusocio.vsc-material-theme-icons
+[2020-12-31 18:24:53.987] [sharedprocess] [info] Renamed to /home/jf/.vscode/extensions/equinusocio.vsc-material-theme-icons-1.2.2
+[2020-12-31 18:24:53.988] [sharedprocess] [info] Installation completed. equinusocio.vsc-material-theme-icons
+[2020-12-31 18:24:54.015] [sharedprocess] [info] Extensions installed successfully: equinusocio.vsc-material-theme-icons
+[2020-12-31 18:24:54.339] [sharedprocess] [info] Downloaded extension: octref.vetur undefined
+[2020-12-31 18:24:55.835] [sharedprocess] [info] Extracted extension to /home/jf/.vscode/extensions/.octref.vetur-0.31.3: octref.vetur
+[2020-12-31 18:24:55.835] [sharedprocess] [info] Renamed to /home/jf/.vscode/extensions/octref.vetur-0.31.3
+[2020-12-31 18:24:55.837] [sharedprocess] [info] Installation completed. octref.vetur
+[2020-12-31 18:24:55.869] [sharedprocess] [info] Extensions installed successfully: octref.vetur
+[2020-12-31 18:25:26.436] [sharedprocess] [info] Starting to clean up unused language packs.

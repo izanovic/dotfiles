@@ -1,0 +1,2 @@
+./switch-workspace.sh: line 2: desktop: command not found
+desktop -f: Invalid descriptor found in '^'.
