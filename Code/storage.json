@@ -376,7 +376,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "Show &&Side Bar"
+                                    "label": "Show &&Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
@@ -1463,10 +1464,10 @@
             "backupPath": "/home/jf/.config/Code/Backups/c2ea85bb6c89ed6b609a5268779100d3",
             "uiState": {
                 "mode": 1,
-                "x": 3113,
-                "y": 21,
-                "width": 1366,
-                "height": 1177
+                "x": 964,
+                "y": 32,
+                "width": 950,
+                "height": 1042
             }
         },
         "openedWindows": []

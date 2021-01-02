@@ -1,4 +1,6 @@
 " Specify a directory for plugins
+"
+"
 let plugins = '~/.config/nvim'
 
 if has('win32')
@@ -47,9 +49,16 @@ Plug 'haya14busa/is.vim'
 Plug 'PawkyPenguin/vim-select-indent'
 
 " Colorschemes
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'doums/darcula'
 Plug 'chriskempson/tomorrow-theme'
 Plug 'flazz/vim-colorschemes'
+
+" VSCode snippets
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
+" test snippet
+Plug 'Neevash/awesome-flutter-snippets'
 
 " Initialize plugin system
 call plug#end()
@@ -61,7 +70,7 @@ source $HOME/.config/nvim/general/settings.vim
 " Airline theme settings
 source $HOME/.config/nvim/themes/airline.vim
 
-colorscheme darcula
+colorscheme dracula
 hi Normal guibg=NONE ctermbg=NONE
 
 nnoremap <SPACE> <Nop>
@@ -72,8 +81,8 @@ let mapleader=" "
 :set autowriteall
 
 " Move the rest of the line 2 lines down and edit inbetween
-inoremap <C-j> <Esc>a<Enter><Esc>O
-nnoremap <C-j> <Esc>a<Enter><Esc>O
+" inoremap <C-j> <Esc>a<Enter><Esc>O
+" nnoremap <C-j> <Esc>a<Enter><Esc>O
 
 set termguicolors     " enable true colors support
 "let ayucolor="light"  " for light version of theme
@@ -112,6 +121,11 @@ augroup my-glyph-palette
   autocmd FileType fern call glyph_palette#apply()
   autocmd FileType nerdtree,startify call glyph_palette#apply()
 augroup END
+
+imap <expr> <C-j>   vsnip#available(1)  ? '<Plug>(vsnip-expand)'         : '<C-j>'
+nmap <expr> <C-j>   vsnip#available(1)  ? '<Plug>(vsnip-expand)'         : '<C-j>'
+imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
+smap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
 
 " nmap <C-n> :NERDTreeToggle<CR>
 
