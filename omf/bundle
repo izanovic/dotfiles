@@ -1,4 +1,2 @@
-theme agnoster
-theme bobthefish
-theme default
-theme nai
+package https://github.com/edc/bass
+package https://github.com/fabioantunes/fish-nvm

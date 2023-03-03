@@ -9,6 +9,53 @@ vim.keymap.set(
   { noremap = true, silent = true, desc = "Resume" }
 )
 
+vim.keymap.set("n", "<leader>y", function()
+  local results = {
+    vim.fn.expand("%:p"),
+    vim.fn.expand("%:."),
+    vim.fn.expand("%:~"),
+    vim.fn.expand("%t"),
+    vim.fn.expand("%:r"),
+    vim.fn.expand("%:e"),
+  }
+
+  -- absolute path to clipboard
+  local i = vim.fn.inputlist({
+    "Choose to copy to clipboard:",
+    "1. Absolute path: " .. results[1],
+    "2. Path relative to CWD: " .. results[2],
+    "3. Path relative to HOME: " .. results[3],
+    "4. Filename: " .. results[4],
+    "5. Filename without extension: " .. results[5],
+    "6. Extension of the filename: " .. results[6],
+  })
+
+  if i > 0 then
+    local result = results[i]
+    if not result then
+      return print("Invalid choice: " .. i)
+    end
+    vim.fn.setreg("*", result)
+  end
+end, { noremap = true, desc = "Copy file" })
+
+vim.keymap.set(
+  "n",
+  "<leader>Ft",
+  '<cmd>!tmux send-keys -t 2 C-z "yarn test %:." Enter<CR>',
+  { noremap = true, desc = "Test file" }
+)
+-- = vim.fn.jobstart(
+--     'echo ' + file,
+--     {
+--         cwd = '/path/to/working/dir',
+--         on_exit = some_function,
+--         on_stdout = some_other_function,
+--         on_stderr = some_third_function
+--     }
+-- )
+-- end, { noremap = true, desc = "Run test" })
+
 vim.keymap.set("n", "<leader>;", "<cmd>EslintFixAll<CR>", { noremap = true, silent = true, desc = "Format eslint" })
 -- harpoon
 vim.keymap.set("n", "<leader>m", "<cmd>lua require('harpoon.mark').add_file()<cr>", { desc = "Add to Harpoon" })
