@@ -8,6 +8,8 @@ vim.keymap.set(
   require("telescope.builtin").resume,
   { noremap = true, silent = true, desc = "Resume" }
 )
+vim.keymap.set("i", "jj", "<esc>", { noremap = true, silent = true })
+vim.keymap.set("i", "hj", "<esc>", { noremap = true, silent = true })
 
 vim.keymap.set("n", "<leader>y", function()
   local results = {
@@ -42,9 +44,17 @@ end, { noremap = true, desc = "Copy file" })
 vim.keymap.set(
   "n",
   "<leader>Ft",
-  '<cmd>!tmux send-keys -t 2 C-z "yarn test %:." Enter<CR>',
+  '<cmd>!tmux send-keys -t 2 C-z "cl; yarn test %:." Enter<CR>',
   { noremap = true, desc = "Test file" }
 )
+
+vim.keymap.set("n", "<leader>FT", function()
+  if vim.bo.filetype == "php" then
+    vim.cmd('!tmux send-keys -t 2 C-z "php artisan test %:." Enter<CR>')
+  else
+    vim.cmd('!tmux send-keys -t 2 C-z "yarn test %:." Enter<CR>')
+  end
+end, { noremap = true, desc = "Test file" })
 -- = vim.fn.jobstart(
 --     'echo ' + file,
 --     {
