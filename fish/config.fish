@@ -1,4 +1,5 @@
-source ~/.profile;clear;
+source ~/.profile
+clear
 
 fish_vi_key_bindings
 
@@ -8,9 +9,16 @@ fish_vi_key_bindings
 # Projects 
 abbr rcache 'sudo sudo chown -R izanovic:izanovic /home/izanovic/projects/web-api/var/cache'
 
+set -x PATH /Users/julian/projects/docker-devtools/bin $PATH
+set -gx PATH "~/.tmuxifier/bin" $PATH
+set -gx PATH ~/nvim-macos/bin/ $PATH
+set -gx EDITOR nvim
+set PATH $PATH $GOPATH/bin
+
 # General
-abbr :q 'exit'
+abbr :q exit
 abbr tunnelbrick 'sudo ifconfig en0 down && sudo route flush && sudo ifconfig en0 up &&'
+alias v '~/nvim-macos/bin/nvim'
 
 # Mogelijk
 abbr is 'ionic serve'
@@ -19,13 +27,17 @@ abbr fios 'perl -i -pe\'s/PLACEHOLDER_BUILD_NUMBER/$(CLI_BUILD_NUMBER)/g\' \'/Us
 abbr ios 'perl -i -pe\'s/$(CLI_BUILD_NUMBER)/PLACEHOLDER_BUILD_NUMBER/g\' \'/Users/julian/Projects/mogelijk/mogelijk-app/ios/App/App/Info.plist\' && ionic cap run ios'
 
 # Projects
-abbr pe 'cd ~/projects/pro-dotenv-mono/' 
-abbr fe 'cd ~/projects/pro-dotenv-mono/nuxt/src/' 
-abbr be 'cd ~/projects/pro-dotenv-mono/api/src/' 
+
+abbr pe 'cd ~/projects/pro-dotenv-mono/'
+abbr ps 'cd ~/projects/stichting-ambulance-wens/'
+abbr pwf 'cd ~/projects/wgm-mijn/'
+abbr pwb 'cd ~/projects/wgm-api/'
+abbr fe 'cd ~/projects/pro-dotenv-mono/nuxt/src/'
+abbr be 'cd ~/projects/pro-dotenv-mono/api/src/'
 
 
 # Git 
-abbr g 'git'
+abbr g git
 abbr ga 'git add'
 abbr gaa 'rm swap-pane; git add --all -- :!packages/investors/schema.json'
 abbr gb "git for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(color:blue)%(refname:short)%(color: white) - %(contents:subject) %(color:green)(%(committerdate:relative))'"
@@ -67,7 +79,6 @@ abbr cl 'printf "\033[2J\033[3J\033[1;1H"'
 
 alias note=" ~/.joplin-bin/lib/node_modules/joplin/main.js"
 alias ngt="mono /usr/local/bin/nuget.exe"
-abbr tmux 'tmux'
 
 starship init fish | source
 
