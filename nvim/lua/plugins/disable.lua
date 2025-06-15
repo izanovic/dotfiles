@@ -1,3 +1,3 @@
 return {
-    { "ggandor/flit.nvim", enabled = false },
+  { "ggandor/flit.nvim", enabled = false },
 }

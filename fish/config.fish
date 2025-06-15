@@ -11,8 +11,10 @@ abbr rcache 'sudo sudo chown -R izanovic:izanovic /home/izanovic/projects/web-ap
 
 set -x PATH /Users/julian/projects/docker-devtools/bin $PATH
 set -gx PATH "~/.tmuxifier/bin" $PATH
+set -gx PATH ~/.local/share/bob/nvim-bin $PATH
 set -gx PATH ~/nvim-macos/bin/ $PATH
 set -gx EDITOR nvim
+set -Ux COLORTERM truecolor
 set PATH $PATH $GOPATH/bin
 
 # General
@@ -35,6 +37,25 @@ abbr pwb 'cd ~/projects/wgm-api/'
 abbr fe 'cd ~/projects/pro-dotenv-mono/nuxt/src/'
 abbr be 'cd ~/projects/pro-dotenv-mono/api/src/'
 
+abbr pr 'cd ~/projects/'
+
+function p
+    cd ~/projects/$argv/
+end
+
+complete -c p -a(ls ~/projects)
+
+function op
+    cd ~/projects/$argv/ && nvm use lts
+    if zellij list-sessions --short | grep "$argv"
+        echo yes
+        zellij delete-session $argv --force
+    end
+    zellij -l quasar-layout -s $argv
+end
+
+complete -c op -a(ls ~/projects)
+
 
 # Git 
 abbr g git
@@ -48,16 +69,17 @@ abbr gc 'git commit -n -m "feat("(git branch --show-current | cut -d/ -f2-)"):'
 abbr gcf 'git commit -n -m "fix("(git branch --show-current | cut -d/ -f2-)"):'
 abbr gca 'git commit --amend'
 abbr go 'git checkout'
-abbr gom 'git checkout master'
+abbr gom 'git checkout main'
 abbr god 'git checkout develop'
 abbr gop 'git checkout possible'
 abbr gob 'git checkout -b'
+
 abbr gcp 'git cherry-pick'
 abbr gd 'git diff'
 abbr gf 'git fetch'
 abbr gl 'git log'
 abbr gm 'git merge'
-abbr gmm 'git merge master'
+abbr gmm 'git merge main'
 abbr gmp 'git merge develop'
 abbr gp 'git push'
 abbr gpu 'git push --set-upstream origin HEAD'
@@ -82,4 +104,4 @@ alias ngt="mono /usr/local/bin/nuget.exe"
 
 starship init fish | source
 
-source /Users/julian/.docker/init-fish.sh || true # Added by Docker Desktop
+# source /Users/julian/.docker/init-fish.sh || true # Added by Docker Desktop

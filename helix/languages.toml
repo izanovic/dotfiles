@@ -1,26 +1,34 @@
 [[language]]
-name = "rust"
-auto-format = true
-formatter = { command = "rustfmt", args = ["+nightly", "--emit=stdout"]}
-
-[language.config]
-checkOnSave = { command = "clippy" }
-rustfmt.extraArgs = ["+nightly"]
-
-[[language]]
 name = "vue"
-auto-format = true
+language-servers = ["volar"]
 file-types = ["vue"]
+scope = "source.vue"
 injection-regex = "vue"
-language-server = { command = "vue-language-server", args = ["--stdio"] }
-roots = ["package.json"]
-scope = "text.html.vue"
-
-[language.config.typescript]
-tsdk = "/usr/local/lib/node_modules/typescript/lib"
+auto-format = true
 
 [[language]]
 name = "typescript"
+language-servers = ["typescript-language-server"]
+file-types = ["ts", "tsx"]
 auto-format = true
-config = { format = { "semicolons" = "insert", "insertSpaceBeforeFunctionParenthesis" = true } }
 
+[[language]]
+name = "javascript"
+language-servers = ["typescript-language-server"]
+file-types = ["js", "jsx"]
+auto-format = true
+
+[[language]]
+name = "html"
+language-servers = ["vscode-html-language-server"]
+auto-format = true
+
+[[language]]
+name = "css"
+language-servers = ["vscode-css-language-server"]
+auto-format = true
+
+[[language]]
+name = "json"
+language-servers = ["vscode-json-language-server"]
+auto-format = true

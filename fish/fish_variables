@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export COLORTERM:truecolor
 SETUVAR --export TERM:screen\x2d256color\x2dbce
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_initialized:3400
@@ -62,7 +63,6 @@ SETUVAR _fish_abbr_m:master
 SETUVAR _fish_abbr_migrate:php\x20yii\x20migrate
 SETUVAR _fish_abbr_mog:cd\x20\x7e/projects/mogelijk/mogelijk\x2dap
 SETUVAR _fish_abbr_o:composer
-SETUVAR _fish_abbr_p:cd\x20\x7e/projects/
 SETUVAR _fish_abbr_pe:cd\x20\x7e/projects/pro\x2ddotenv\x2dmono/
 SETUVAR _fish_abbr_pf:cd\x20\x7e/projects/\x20\x26\x26\x20cd\x20FonqResponsive/Fonq\x2ePresentation\x2eFrontend/
 SETUVAR _fish_abbr_pios:perl\x20\x2di\x20\x2dpe\x27s/\x24\x28CLI_BUILD_NUMBER\x29/PLACEHOLDER_BUILD_NUMBER/g\x27\x20\x27/Users/julian/Projects/mogelijk/mogelijk\x2dapp/ios/App/App/Info\x2eplist\x27\x20\x26\x26\x20ionic\x20cap\x20run\x20ios
@@ -76,9 +76,10 @@ SETUVAR _fish_abbr_ya:yarn\x20add
 SETUVAR _fish_abbr_yb:yarn\x20build
 SETUVAR _fish_abbr_yd:kill\x20\x2d9\x20\x28lsof\x20\x2dti\x3a3000\x29\x3b\x20yarn\x20dev\x20\x2d\x2dport\x3d3000
 SETUVAR _fish_abbr_yr:yarn\x20remove
-SETUVAR _fisher_jorgebucaran_2F_fisher_files:/Users/julian/\x2econfig/fish/functions/fisher\x2efish\x1e/Users/julian/\x2econfig/fish/completions/fisher\x2efish
-SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:/Users/julian/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e/Users/julian/\x2econfig/fish/functions/_nvm_list\x2efish\x1e/Users/julian/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e/Users/julian/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e/Users/julian/\x2econfig/fish/functions/nvm\x2efish\x1e/Users/julian/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e/Users/julian/\x2econfig/fish/completions/nvm\x2efish
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:\x7e/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_list\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e\x7e/\x2econfig/fish/functions/nvm\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e\x7e/\x2econfig/fish/completions/nvm\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/nvm\x2efish
+SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:4c566a
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:81a1c1
@@ -109,7 +110,5 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/usr/local/sbin\x1e/home/izanovic/flutter/bin
-SETUVAR nvm_data:/Users/julian/\x2elocal/share/nvm
+SETUVAR fish_user_paths:/usr/local/sbin\x1e/home/izanovic/flutter/bin\x1e/home/izanovic/\x2eyarn/bin
 SETUVAR nvm_default_version:v16\x2e15\x2e0
-SETUVAR nvm_mirror:https\x3a//nodejs\x2eorg/dist

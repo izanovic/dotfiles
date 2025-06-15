@@ -5,6 +5,7 @@ return {
   { "EdenEast/nightfox.nvim" },
   { "sainnhe/everforest" },
   { "JoosepAlviste/palenightfall.nvim" },
+  { "rebelot/kanagawa.nvim" },
 
   -- Configure LazyVim to load Nord
   {
