@@ -38,3 +38,20 @@ local textobjects = { "`", "'", '"', "[", "]", "{", "}", "(", ")", "<", ">", "q"
 for _, char in ipairs(textobjects) do
   set({ "o", "x" }, char, "i" .. char, { remap = true })
 end
+
+local function toggle_neotree_side(side)
+  -- Close the opposite side if it's open
+  local opposite = side == "left" and "right" or "left"
+  vim.cmd("Neotree close position=" .. opposite)
+
+  -- Toggle the requested side
+  vim.cmd("Neotree toggle position=" .. side)
+end
+
+vim.keymap.set("n", "<leader>e", function()
+  toggle_neotree_side("left")
+end, { desc = "Neo-tree (left side)" })
+
+vim.keymap.set("n", "<leader>ue", function()
+  toggle_neotree_side("right")
+end, { desc = "Neo-tree (right side)" })
