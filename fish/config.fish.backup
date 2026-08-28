@@ -1,0 +1,194 @@
+source ~/.profile
+clear
+
+fish_vi_key_bindings
+
+#######################################
+# Shortcuts | Abbreviations | Aliases #
+#######################################
+# Projects 
+abbr rcache 'sudo sudo chown -R izanovic:izanovic /home/izanovic/projects/web-api/var/cache'
+
+set -x PATH /Users/julian/projects/docker-devtools/bin $PATH
+set -gx PATH "~/.tmuxifier/bin" $PATH
+set -gx PATH ~/.local/share/bob/nvim-bin $PATH
+set -gx PATH ~/nvim-macos/bin/ $PATH
+set -gx PATH ~/Applications/flutter/bin $PATH
+set -gx EDITOR nvim
+set -Ux ANDROID_SDK_ROOT /mnt/c/Users/julia/AppData/Local/Android/Sdk
+set -Ux PATH $ANDROID_SDK_ROOT/emulator $ANDROID_SDK_ROOT/tools $ANDROID_SDK_ROOT/tools/bin $ANDROID_SDK_ROOT/platform-tools $PATH
+set -Ux COLORTERM truecolor
+set -gx CHROME_EXECUTABLE /mnt/c/Program\ Files/BraveSoftware/Brave-Browser/Application/brave.exe
+set PATH $PATH $GOPATH/bin
+
+# General
+abbr tunnelbrick 'sudo ifconfig en0 down && sudo route flush && sudo ifconfig en0 up &&'
+alias v '~/nvim-macos/bin/nvim'
+
+# Mogelijk
+abbr is 'ionic serve'
+abbr andr 'ionic cap run android'
+abbr fios 'perl -i -pe\'s/PLACEHOLDER_BUILD_NUMBER/$(CLI_BUILD_NUMBER)/g\' \'/Users/julian/Projects/mogelijk/mogelijk-app/ios/App/App/Info.plist\''
+abbr ios 'perl -i -pe\'s/$(CLI_BUILD_NUMBER)/PLACEHOLDER_BUILD_NUMBER/g\' \'/Users/julian/Projects/mogelijk/mogelijk-app/ios/App/App/Info.plist\' && ionic cap run ios'
+
+# Projects
+
+abbr pe 'cd ~/projects/pro-dotenv-mono/'
+abbr ps 'cd ~/projects/stichting-ambulance-wens/'
+abbr pwf 'cd ~/projects/wgm-mijn/'
+abbr pwb 'cd ~/projects/wgm-api/'
+
+abbr pr 'cd ~/projects/'
+abbr vibe 'zellij -l vibe-layout'
+
+function p
+    cd ~/projects/$argv/
+end
+
+complete -c p -a(ls ~/projects)
+
+function op
+    cd ~/projects/$argv/ && nvm use lts
+    if zellij list-sessions --short | grep "$argv"
+        zellij delete-session $argv --force
+    end
+    zellij -l mono-layout
+end
+
+function fe
+    set session "$argv (FE)"
+    cd ~/projects/$argv || return
+    nvm use lts
+
+    set sessions (zellij list-sessions --short 2>/dev/null; or echo "")
+
+    if contains -- "$session" $sessions
+        echo yes
+        zellij attach "$session"
+    else
+        echo no
+        zellij -s "$session" -l frontend-layout
+    end
+end
+
+function be
+    cd ~/projects/$argv/ && nvm use lts
+    zellij attach -l backend-layout --create "$argv (BE)"
+end
+
+complete -c op -a(ls ~/projects)
+
+function rr
+    set PREV_CMD (history | head -1)
+    set PREV_OUTPUT (eval $PREV_CMD)
+    set CMD $argv[1]
+    echo "Running '$CMD $PREV_OUTPUT'"
+    eval "$CMD $PREV_OUTPUT"
+end
+
+# Path to temporary clipboard file
+set -g FILE_CLIPBOARD "$HOME/.file_clipboard"
+
+function copy
+    if test (count $argv) -eq 0
+        echo "❌ Usage: copy <file1> [file2 ...]"
+        return 1
+    end
+
+    set -l copied_paths
+    for f in $argv
+        if test -e $f
+            set -a copied_paths (realpath $f)
+        else
+            echo "⚠️  File not found: $f"
+        end
+    end
+
+    if test (count $copied_paths) -gt 0
+        printf "%s\n" $copied_paths >$FILE_CLIPBOARD
+        echo "📋 Copied "(count $copied_paths)" file(s) → $FILE_CLIPBOARD"
+        for f in $copied_paths
+            echo "   • $f"
+        end
+    else
+        echo "❌ No valid files copied."
+    end
+end
+
+function paste
+    if not test -f $FILE_CLIPBOARD
+        echo "❌ No files copied yet."
+        return 1
+    end
+
+    set dest (pwd)
+    for f in (cat $FILE_CLIPBOARD)
+        if not test -e $f
+            echo "⚠️  Skipped missing file: $f"
+            continue
+        end
+
+        set base (basename $f)
+        if test (realpath (dirname $f)) = $dest
+            echo "⚠️  Skipped (already in this directory): $base"
+            continue
+        end
+
+        cp -r -n $f $dest
+        echo "📎 Pasted: $base → $dest"
+    end
+end
+
+# Git 
+abbr g git
+abbr ga 'git add'
+abbr gaa 'rm swap-pane; git add --all -- :!packages/investors/schema.json'
+abbr gb "git for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(color:blue)%(refname:short)%(color: white) - %(contents:subject) %(color:green)(%(committerdate:relative))'"
+abbr gol "git checkout (git for-each-ref --count=1 --sort=-committerdate refs/heads/ --format='%(refname:short)')"
+abbr gd 'git branch -D'
+abbr gbl 'git blame'
+abbr gc 'git commit -n -m "feat("(git branch --show-current | cut -d/ -f2-)"):'
+abbr gcf 'git commit -n -m "fix("(git branch --show-current | cut -d/ -f2-)"):'
+abbr gca 'git commit --amend'
+abbr go 'git checkout'
+abbr gom 'git checkout main'
+abbr god 'git checkout develop'
+abbr gop 'git checkout possible'
+abbr gob 'git checkout -b'
+
+abbr gcp 'git cherry-pick'
+abbr gd 'git diff'
+abbr gf 'git fetch'
+abbr gl 'git log'
+abbr gm 'git merge'
+abbr gmm 'git merge main'
+abbr gmp 'git merge develop'
+abbr gp 'git push'
+abbr gpu 'git push --set-upstream origin HEAD'
+abbr gpf 'git push --force-with-lease'
+abbr gpl 'git pull'
+abbr gr 'git remote'
+abbr grb 'git rebase'
+abbr gst 'git status'
+abbr gsta 'git stash'
+
+# Yarn
+abbr yb 'yarn build'
+abbr yd 'kill -9 (lsof -ti:3000); yarn dev --port=3000'
+abbr ya 'yarn add'
+abbr yr 'yarn remove'
+
+# Kitty
+abbr cl 'printf "\033[2J\033[3J\033[1;1H"'
+
+alias note=" ~/.joplin-bin/lib/node_modules/joplin/main.js"
+alias ngt="mono /usr/local/bin/nuget.exe"
+
+starship init fish | source
+
+# source /Users/julian/.docker/init-fish.sh || true # Added by Docker Desktop
+set -gx VOLTA_HOME "$HOME/.volta"
+set -gx PATH "$VOLTA_HOME/bin" $PATH
+
+# opencode
+fish_add_path /home/izanovic/.opencode/bin

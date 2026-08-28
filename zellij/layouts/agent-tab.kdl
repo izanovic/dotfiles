@@ -1,0 +1,7 @@
+layout {
+    pane {
+        command "bash"
+        args "-c" "OPENCODE_FEATURE=__FEATURE_NAME__ opencode run --auto '__PROMPT__'"
+        cwd "/home/izanovic/projects/headstad"
+    }
+}

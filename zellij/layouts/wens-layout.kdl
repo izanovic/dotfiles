@@ -1,0 +1,53 @@
+layout {
+  tab name="nvim" cwd="~/Projects/stichting-ambulance-wens/" {
+    pane size=1 borderless=true {
+        plugin location="zellij:compact-bar"
+    }
+    pane borderless=true edit="" focus=true
+  }
+  tab name="shell" cwd="~/Projects/stichting-ambulance-wens/" {
+    pane size=1 borderless=true {
+        plugin location="zellij:compact-bar"
+    }
+    pane split_direction="vertical" {
+      pane split_direction="horizontal" {
+        pane cwd="~/Projects/stichting-ambulance-wens/client/src"
+        pane
+      }
+      pane split_direction="horizontal" {
+        pane command="bin/dev" {
+            args "bash"
+        }
+        pane command="bin/dev" {
+            args "serve"
+        }
+      }
+    }
+  }
+  tab name="check" cwd="~/Projects/stichting-ambulance-wens/client/src" {
+    pane size=1 borderless=true {
+        plugin location="zellij:compact-bar"
+    }
+    pane split_direction="vertical" {
+        pane command="yarn" start_suspended=true {
+            args "typecheck"
+        }
+        pane command="yarn" start_suspended=true {
+            args "lint"
+        }
+        pane command="yarn" start_suspended=true {
+            args "test"
+        }
+    }
+    pane 
+  }
+  tab name="git" cwd="~/Projects/stichting-ambulance-wens/" {
+    pane size=1 borderless=true {
+        plugin location="zellij:compact-bar"
+    }
+    pane
+    pane size=2 borderless=true {
+        plugin location="zellij:status-bar"
+    }
+  }
+}

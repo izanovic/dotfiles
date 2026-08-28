@@ -1,0 +1,66 @@
+layout {
+  default_tab_template {
+      pane size=1 borderless=true {
+          plugin location="zellij:compact-bar"
+      }
+      pane size=1 borderless=true {
+          plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
+              format_left   "#[fg=#89B4FA,bold]{session}"
+              format_center "{tabs}"
+              format_right  "{datetime}"
+              format_space  ""
+
+              border_enabled  "false"
+              border_char     "─"
+              border_format   "#[fg=#6C7086]{char}"
+              border_position "top"
+
+              tab_normal   "#[fg=#6C7086] {name} "
+              tab_active   "#[fg=#ffffff,bold,italic] {name} "
+          }
+      }
+      children
+  }
+  tab name="editor FE" focus=true {
+    pane borderless=true edit="./package.json" focus=true cwd="~/projects/gocasa/"
+    floating_panes {
+      pane cwd="~/projects/gocasa/" borderless=true {
+        x 0
+        y 0
+        width 5
+        height 5
+        command "bash"
+        args "-c" "/home/izanovic/.config/zellij/scripts/quasar-status.sh"
+        pinned true
+      }
+    }
+  }
+  tab name="editor BE" {
+    pane borderless=true edit="./package.json" cwd="~/projects/showcasa-firebase/"
+  }
+  tab name="AI FE" {
+    pane borderless=true command="gemini" cwd="~/projects/gocasa/"
+  }
+  tab name="AI BE" {
+    pane borderless=true command="gemini" cwd="~/projects/showcasa-firebase/"
+  }
+  tab name="shell" {
+    pane split_direction="horizontal" {
+      pane cwd="~/projects/gocasa/" 
+      pane cwd="~/projects/showcasa-firebase/"
+    }
+  }
+  tab name="run" {
+    pane split_direction="vertical" {
+      pane 
+      pane cwd="~/projects/gocasa/" {
+          command "bash"
+          args "-c" "/home/izanovic/.config/zellij/scripts/quasar-status.sh"
+      }
+      pane cwd="~/projects/gocasa/" {
+          command "bash"
+          args "-c" "/home/izanovic/.config/zellij/scripts/quasar-dev.sh"
+      }
+    }
+  }
+}

@@ -1,0 +1,257 @@
+gst
+nvm
+nvim
+zellij
+op gocasa
+cd /
+cd 
+..
+cd ~
+gst
+cd ~/Projects
+la
+ls
+ls -la
+source ~/.config/nushell/aliases.nu
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+nvim
+source ~/.config/nushell/aliases.nu
+nvim
+source ~/.config/nushell/aliases.nu
+nvim
+source ~/.config/nushell/aliases.nu
+nvim ~/.config/nushell/aliases.nu
+gst
+ast
+nvim ~/.config/nushell/aliases.nu
+ga
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+nvim ~/.config/nushell/aliases.nu
+nvim
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+gst
+op gocasa
+source ~/.config/nushell/aliases.nu
+op gocasa
+nvm use lts
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+op gocasa
+nvm install lts
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+nvm install lts
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+op gocasa
+curl https://get.volta.sh | bash
+volta install node
+nvm use lts
+nvim ~/.config/nushell/aliases.nu
+nvm use lts
+source ~/.config/nushell/aliases.nu
+nvm use lts
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+nvm use lts
+which volta
+nvim ~/.config/nushell/env.nu
+source ~/.config/nushell/aliases.nu
+nvm use lts
+nvim ~/.config/nushell/env.nu
+source ~/.config/nushell/aliases.nu
+source ~/.config/nushell/env.nu
+nvim ~/.config/nushell/env.nu
+source ~/.config/nushell/env.nu
+nvim ~/.config/nushell/env.nu
+source ~/.config/nushell/env.nu
+nvm use lts
+source ~/.config/nushell/env.nu
+nvm use lts
+volta install node
+nvm use lts
+volta node use lts
+volta install node@lts<\n>volta use node@lts
+volta install node@lts
+nvim ~/.config/nushell/aliases.nu
+volta use node@lts
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/env.nu
+op gocasa
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+$nu.config-path
+nvim ~/.config/nushell/config.nu
+source ~/.config/nushell/config.nu
+nvim ~/.config/nushell/config.nu
+ls
+la
+ls -la
+ll
+la
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/
+source  ~/.config/nushell/aliases.nu
+la
+asdadas
+nvim ~/.config/nushell/aliases.nu
+source  ~/.config/nushell/aliases.nu
+la
+gst
+witch bash.rc
+wich bash.rc
+which bash.rc
+which bash
+c
+nvim ~/.config/nushell/aliases.nu
+source  ~/.config/nushell/aliases.nu
+nvim ~/.config/nushell/aliases.nu
+c
+source  ~/.config/nushell/aliases.nu
+c confif
+nvim ~/.config/nushell/aliases.nu
+c
+source  ~/.config/nushell/aliases.nu
+c
+nvim
+nvim ~/.bashrc
+chsh -s /usr/bin/nu
+la
+gst
+| g
+gsdd
+gst
+zellij
+cargo install zellij
+sudo apt update
+sudo apt list --upgradable
+neovim -v
+nvim -v
+rustup update
+$env.PATH
+echo $PATH
+$env.PATH
+/home/izanovic/.volta/bin /home/izanovic/nvim-macos/bin/ /home/izanovic/.local/share/bob/nvim-bin ~/.tmuxifier/bin /Users/julian/projects/docker-devtools/bin /home/izanovic/.opencode/bin /usr/local/sbin /home/izanovic/flutter/bin /home/izanovic/.yarn/bin /home/izanovic/.volta/bin /home/izanovic/.volta/bin /home/izanovic/.volta/bin /home/izanovic/.cargo/bin /home/izanovic/.nvm/versions/node/v21.6.1/bin /home/izanovic/.volta/bin /usr/local/bin /usr/sbin /usr/bin /sbin /bin /usr/games /usr/local/games /usr/lib/wsl/lib /mnt/c/Windows/system32 /mnt/c/Windows /mnt/c/Windows/System32/Wbem /mnt/c/Windows/System32/WindowsPowerShell/v1.0/ /mnt/c/Windows/System32/OpenSSH/ /mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common /mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR /mnt/c/Program Files/WezTerm /mnt/c/WINDOWS/system32 /mnt/c/WINDOWS /mnt/c/WINDOWS/System32/Wbem /mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/ /mnt/c/WINDOWS/System32/OpenSSH/ /mnt/c/Users/julia/AppData/Local/Microsoft/WindowsApps /mnt/c/Users/julia/AppData/Local/Programs/Microsoft VS Code/bin /snap/bin | from tsv --header
+/home/izanovic/nvim-macos/bin/ /home/izanovic/.local/share/bob/nvim-bin ~/.tmuxifier/bin /Users/julian/projects/docker-devtools/bin /home/izanovic/.opencode/bin /usr/local/sbin /home/izanovic/flutter/bin /home/izanovic/.yarn/bin /home/izanovic/.volta/bin /home/izanovic/.volta/bin /home/izanovic/.volta/bin /home/izanovic/.cargo/bin /home/izanovic/.nvm/versions/node/v21.6.1/bin /home/izanovic/.volta/bin /usr/local/bin /usr/sbin /usr/bin /sbin /bin /usr/games /usr/local/games /usr/lib/wsl/lib /mnt/c/Windows/system32 /mnt/c/Windows /mnt/c/Windows/System32/Wbem /mnt/c/Windows/System32/WindowsPowerShell/v1.0/ /mnt/c/Windows/System32/OpenSSH/ /mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common /mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR /mnt/c/Program Files/WezTerm /mnt/c/WINDOWS/system32 /mnt/c/WINDOWS /mnt/c/WINDOWS/System32/Wbem /mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/ /mnt/c/WINDOWS/System32/OpenSSH/ /mnt/c/Users/julia/AppData/Local/Microsoft/WindowsApps /mnt/c/Users/julia/Abi
+zellij
+source ~/.config/nushell/config.nu
+sudo apt install trim
+nu config
+nvim ~/.config/nushell/config.nu
+source ~/.config/nushell/config.nu
+zellij
+config nu
+source ~/.config/nushell/config.nu
+config nu
+source ~/.config/nushell/config.nu
+config nu
+source ~/.config/nushell/config.nu
+config nu
+source ~/.config/nushell/config.nu
+asdadaasds
+config nu
+source ~/.config/nushell/config.nu
+config nu
+source ~/.config/nushell/config.nu
+config nu
+source ~/.config/nushell/config.nu
+config nu
+source ~/.config/nushell/config.nu
+config nu
+source ~/.config/nushell/config.nu
+config nu
+source ~/.config/nushell/config.nu
+nvim ~/.config/nushell/config.nu
+source ~/.config/nushell/config.nu
+nvim ~/.config/nushell/config.nu
+config nu
+source ~/.config/nushell/config.nu
+nvim ~/.config/nushell/config.nu
+source ~/.config/nushell/config.nu
+config nu
+source ~/.config/nushell/config.nu
+nvim ~/.config/nushell/config.nu
+source ~/.config/nushell/config.nu
+nvim ~/.config/nushell/config.nu
+source ~/.config/nushell/config.nu
+config nu
+source ~/.config/nushell/config.nu
+nvim ~/.config/nushell/config.nu
+source ~/.config/nushell/config.nu
+nvim ~/.config/nushell/config.nu
+source ~/.config/nushell/config.nu
+nvim ~/.config/nushell/config.nu
+source ~/.config/nushell/config.nu
+nvim ~/.config/nushell/config.nu
+source ~/.config/nushell/config.nu
+$env.config | table -e | less -R
+nvim ~/.config/nushell/config.nu
+source ~/.config/nushell/config.nu
+nvim ~/.config/starship.toml
+source ~/.config/starship.toml
+nvim ~/.config/starship.toml
+source ~/.config/starship.toml
+nvim ~/.config/starship.toml
+$env | table
+nvim
+op gocasa
+config nu
+source ~/.config/starship.toml
+source ~/.config/nushell/config.nu
+nvim
+config nu
+op gocasa
+fsh
+op gocasa
+zellij
+source ~/.config/nushell/config.nu
+zellij
+chsh -s /usr/bin/fish
+op gocasa
+zellij
+nu config
+zellij
+nvim ~/.config/nushell/config.nu
+source ~/.config/nushell/config.nu
+nvim ~/.config/nushell/config.nu
+source ~/.config/nushell/config.nu
+nvim ~/.config/nushell/config.nu
+source ~/.config/nushell/config.nu
+nvim
+nvim ~/.config/nushell/config.nu
+source ~/.config/nushell/config.nu
+nvim
+source ~/.config/nushell/config.nu
+nvim ~/.config/nushell/aliases.nu
+source ~/.config/nushell/aliases.nu
+op gocasa
+fe gocasa

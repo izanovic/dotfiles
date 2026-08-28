@@ -1,0 +1,59 @@
+layout {
+  tab name="editor FE" {
+    pane size=1 split_direction="vertical" {
+      pane borderless=true {
+          plugin location="zellij:compact-bar"
+      }
+      pane size=1 borderless=true cwd="~/projects/nexura/" {
+          command "bash"
+          args "-c" "/home/izanovic/.config/zellij/scripts/quasar-status.sh"
+      }
+    }
+    pane borderless=true edit="./package.json" focus=true cwd="~/projects/nexura/"
+  }
+  tab name="editor BE" {
+    pane size=1 borderless=true {
+        plugin location="zellij:compact-bar"
+    }
+    pane borderless=true edit="./package.json" cwd="~/projects/showcasa-firebase/"
+  }
+  tab name="AI FE" {
+    pane size=1 borderless=true {
+        plugin location="zellij:compact-bar"
+    }
+    pane borderless=true command="gemini" cwd="~/projects/nexura/"
+  }
+  tab name="AI BE" {
+    pane size=1 borderless=true {
+        plugin location="zellij:compact-bar"
+    }
+    pane borderless=true command="gemini" cwd="~/projects/showcasa-firebase/"
+  }
+  tab name="shell" {
+    pane size=1 borderless=true {
+        plugin location="zellij:compact-bar"
+    }
+    pane split_direction="horizontal" {
+      pane split_direction="horizontal" {
+        pane cwd="~/projects/nexura/" 
+      }
+      pane split_direction="horizontal" {
+        pane cwd="~/projects/showcasa-firebase/"
+      }
+    }
+  }
+  tab name="run" {
+    pane size=1 borderless=true {
+        plugin location="zellij:compact-bar"
+    }
+    pane split_direction="horizontal" {
+      pane split_direction="horizontal" {
+        pane
+      }
+      pane borderless=true cwd="~/projects/nexura/" {
+          command "bash"
+          args "-c" "/home/izanovic/.config/zellij/scripts/quasar-dev.sh"
+      }
+    }
+  }
+}
